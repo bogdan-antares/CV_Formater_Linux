@@ -34,7 +34,11 @@ formations = [
 """
 
 exemple2 = """
-# Ajouter des compétences et sous-compétences, le tableau competences doit s'appeler 'competences'. Ne change pas le nom je te rappelle que ce que tu retournes sera directement inclus dans un code python et donc il faut respecter la structure :
+# Ajouter des compétences et sous-compétences, le tableau competences doit s'appeler 'competences'. Ne change pas le nom je te rappelle que ce que tu retournes sera directement inclus dans un code python et donc il faut respecter la structure. Evites les erreurs suivantes : 
+
+    for char in text:
+TypeError: 'int' object is not iterable :
+
 competences = {
     "Logiciels & Compétences": [
         "Support utilisateurs",
@@ -53,6 +57,10 @@ competences = {
 
 exemple3 = """
 # Ajouter des expériences professionnelles, le tableau experience doit s'appeler "experiences". Ne change pas le nom je te rappelle que ce que tu retournes sera directement inclus dans un code python et donc il faut respecter la structure et éviter d'avoir ces erreurs :
+
+    for char in text:
+TypeError: 'int' object is not iterable
+
 
 entreprise, periode, poste, description, technologies = experience
 ValueError: not enough values to unpack (expected 5, got 4)
