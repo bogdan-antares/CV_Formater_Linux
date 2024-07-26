@@ -10,8 +10,6 @@ import subprocess
 import os
 import json
 import sys
-import win32api
-import win32con
 
 class CVFormaterApp(App):
     def build(self):
@@ -72,18 +70,8 @@ class CVFormaterApp(App):
         self.popup.open()
 
     def is_hidden_or_system(self, filename, filetype):
-        # Sur Windows, utiliser win32api pour vérifier les attributs de fichier
-        if sys.platform == "win32":
-            try:
-                attributes = win32api.GetFileAttributes(filename)
-                if attributes & (win32con.FILE_ATTRIBUTE_HIDDEN | win32con.FILE_ATTRIBUTE_SYSTEM):
-                    return False
-                return True
-            except Exception:
-                return False
         # Sur Linux, vérifier les fichiers cachés (ceux qui commencent par un point)
-        else:
-            return not os.path.basename(filename).startswith('.')
+        return not os.path.basename(filename).startswith('.')
 
     def open_filename_dialog(self, instance):
         self.selected_path = self.file_chooser.path
