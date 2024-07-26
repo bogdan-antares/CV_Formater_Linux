@@ -1,6 +1,6 @@
 # CV_Formater
 
-Application permettant de formater des CV pour l'entreprise Antares. Cette version est conçue uniquement pour une utilisation sur Windows.
+Application permettant de formater des CV pour l'entreprise Antares. Cette version est conçue uniquement pour une utilisation sur Linux (Ubuntu).
 
 ## Mode d'emploi de l'installation de l'application :
 
