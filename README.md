@@ -43,6 +43,7 @@ pip install openai
 pip install python-docx
 pip install python-dateutil
 pip install python-dotenv
+chmod +x cv_formater.sh
 ```
 
 ### Étape 5 :
