@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CV Formater
+Comment=Format and save CVs
+Exec=/path/to/your/project/cv_formater.sh
+Icon=/path/to/your/project/antares_logo.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
